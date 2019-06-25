@@ -1,0 +1,30 @@
+<div class="container">
+  <label>Course assignments</label>
+
+  <!-- [isAnimated]="true" removed from accordion because of resizing issue -->
+  <accordion>
+
+    <accordion-group [panelClass]="customClass">
+      <button class="btn btn-success" accordion-heading>
+        Assignment 1
+      </button>
+        <app-assignment1></app-assignment1>
+    </accordion-group>
+
+    <accordion-group [panelClass]="customClass">
+      <button class="btn btn-success"  accordion-heading>
+        Assignment 2
+      </button>
+      <app-assignment2></app-assignment2>
+    </accordion-group>
+
+    <accordion-group [panelClass]="customClass">
+      <button class="btn btn-success" accordion-heading>
+        Assignment 3
+      </button>
+      <app-assignment3></app-assignment3>
+    </accordion-group>
+
+  </accordion>
+
+</div>

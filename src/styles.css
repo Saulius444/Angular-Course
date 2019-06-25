@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+.card.customClass,
+.card.customClass .card-header,
+.panel.customClass {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+}
+
+.panel.customClass .panel-body {
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.space {
+  margin-top: 1rem;
+}
