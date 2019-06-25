@@ -4,14 +4,12 @@
   Toggle Details
 </button>
 
-
 <p *ngIf="showSecret; else noSecret">Secret password = tuna</p>
 <ng-template #noSecret>
   <p>
     {{placeholder}}
   </p>
 </ng-template>
-
 
 <div 
   *ngFor="let logItem of log; let i = index"
