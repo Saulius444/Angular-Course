@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './course-assignments/assignment2/server/server.component';
 import { ServersComponent } from './course-assignments/assignment2/servers/servers.component';
-import { MenuComponent } from './menu/menu.component';
+import { MenuComponent } from './course-assignments/menu/menu.component';
 import { AccordionModule, AccordionConfig } from 'ngx-bootstrap/accordion';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,6 +16,12 @@ import { WarningAlertComponent } from './course-assignments/assignment1/warning-
 import { Assignment2Component } from './course-assignments/assignment2/assignment2.component';
 import { Assignment3Component } from './course-assignments/assignment3/assignment3.component';
 import { HeaderComponent } from './course-project/header/header.component';
+import { RecipesComponent } from './course-project/recipes/recipes.component';
+import { RecipeListComponent } from './course-project/recipes/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './course-project/recipes/recipe-detail/recipe-detail.component';
+import { RecipeItemComponent } from './course-project/recipes/recipe-list/recipe-item/recipe-item.component';
+import { ShoppingListComponent } from './course-project/shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './course-project/shopping-list/shopping-edit/shopping-edit.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +34,13 @@ import { HeaderComponent } from './course-project/header/header.component';
     WarningAlertComponent,
     Assignment2Component,
     Assignment3Component,
-    HeaderComponent
+    HeaderComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent
   ],
   imports: [
     BrowserModule,
