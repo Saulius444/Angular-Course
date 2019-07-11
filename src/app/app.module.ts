@@ -22,6 +22,7 @@ import { RecipeDetailComponent } from './course-project/recipes/recipe-detail/re
 import { RecipeItemComponent } from './course-project/recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './course-project/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './course-project/shopping-list/shopping-edit/shopping-edit.component';
+import { Assignment4Component } from './course-assignments/assignment4/assignment4.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ShoppingEditComponent } from './course-project/shopping-list/shopping-e
     RecipeDetailComponent,
     RecipeItemComponent,
     ShoppingListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    Assignment4Component
   ],
   imports: [
     BrowserModule,

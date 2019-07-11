@@ -24,6 +24,7 @@
     "bootstrap": "^3.4.1",
     "core-js": "^2.6.9",
     "ngx-bootstrap": "^4.3.0",
+    "ngx-webstorage-service": "^4.0.1",
     "rxjs": "6.0.0",
     "zone.js": "^0.8.26"
   },
