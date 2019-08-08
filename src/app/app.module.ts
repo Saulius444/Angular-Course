@@ -23,6 +23,8 @@ import { RecipeItemComponent } from './course-project/recipes/recipe-list/recipe
 import { ShoppingListComponent } from './course-project/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './course-project/shopping-list/shopping-edit/shopping-edit.component';
 import { Assignment4Component } from './course-assignments/assignment4/assignment4.component';
+import { CockpitComponent } from './course-assignments/assignment4/cockpit/cockpit.component';
+import { ServerElementComponent } from './course-assignments/assignment4/server-element/server-element.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { Assignment4Component } from './course-assignments/assignment4/assignmen
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    Assignment4Component
+    Assignment4Component,
+    CockpitComponent,
+    ServerElementComponent
   ],
   imports: [
     BrowserModule,
