@@ -6,6 +6,8 @@
   background-color: #ffffff;
   color: #000000;
   border: none;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
 }
 
 .panel.customClass .panel-body {
@@ -16,3 +18,4 @@
 .space {
   margin-top: 1rem;
 }
+

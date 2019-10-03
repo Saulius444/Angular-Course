@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ServerComponent } from './course-assignments/assignment2/server/server.component';
@@ -52,8 +52,7 @@ import { ServerElementComponent } from './course-assignments/assignment4/server-
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    // tslint:disable-next-line: deprecation
-    HttpModule,
+    HttpClientModule,
     AccordionModule.forRoot(),
     CollapseModule.forRoot(),
     BrowserAnimationsModule

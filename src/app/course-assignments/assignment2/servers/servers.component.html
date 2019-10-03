@@ -1,6 +1,6 @@
 <div>
   <label>Server Name</label>
-  <input type="text" class="form-control" [(ngModel)]="serverName" />
+  <input type="text" class="form-control mb-2" [(ngModel)]="serverName" />
   <!-- <p>{{ serverCreationStatus }}</p> -->
   <button
     class="btn btn-primary"
@@ -19,8 +19,8 @@
 </div>
 <div>
   <label class="space">User Name</label>
-  <input type="text" class="form-control" [(ngModel)]="userName" />
-  <p>{{ userName }}</p>
+  <input type="text" class="form-control mb-2" [(ngModel)]="userName" />
+  <p class="mb-2">{{ userName }}</p>
   <button
     class="btn btn-primary"
     [disabled]="userName === ''"

@@ -1,35 +1,35 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <h3>Angular Course</h3>
+    <div class="col">
+      <h3 class="mt-2 mb-2">Angular Course</h3>
       <label>Course assignments</label>
 
       <!-- [isAnimated]="true" removed from accordion because of resizing issue -->
       <accordion>
 
         <accordion-group [panelClass]="customClass">
-          <button class="btn btn-success" accordion-heading>
+          <button class="btn btn-block btn-lg btn-success" accordion-heading>
             Assignment 1
           </button>
             <app-assignment1></app-assignment1>
         </accordion-group>
 
         <accordion-group [panelClass]="customClass">
-          <button class="btn btn-success"  accordion-heading>
+          <button class="btn btn-block btn-lg btn-success"  accordion-heading>
             Assignment 2
           </button>
           <app-assignment2></app-assignment2>
         </accordion-group>
 
         <accordion-group [panelClass]="customClass">
-          <button class="btn btn-success" accordion-heading>
+          <button class="btn btn-block btn-lg btn-success" accordion-heading>
             Assignment 3
           </button>
           <app-assignment3></app-assignment3>
         </accordion-group>
 
         <accordion-group [panelClass]="customClass">
-          <button class="btn btn-success" accordion-heading>
+          <button class="btn btn-block btn-lg btn-success" accordion-heading>
             Assignment 4
           </button>
           <app-assignment4></app-assignment4>
