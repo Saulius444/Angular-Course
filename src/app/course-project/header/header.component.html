@@ -1,22 +1,24 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
   <div class="container-fluid">
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
-          <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+      <a href="#" class="navbar-brand">Recipe Book</a>
+      <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed" aria-controls="navToggler">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <a routerLink="/" class="navbar-brand">Recipe Book</a>
-    </div>
 
-    <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Shopping List</a></li>
+    <div class="collapse navbar-collapse" id="navToggler" [collapse]="isCollapsed" [isAnimated]="true">
+      <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#" (click)="onSelect('recipe')">Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a>
+        </li>
       </ul>
 
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
+      <ul class="nav navbar-nav navbar-md-right">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" role="button">Manage <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Save Data</a></li>
             <li><a href="#">Fetch Data</a></li>
@@ -24,6 +26,5 @@
         </li>
       </ul>
     </div>
-
   </div>
 </nav>

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   projectState: boolean;
   stateInStorage: string;
+  loadedFeature = 'recipe';
 
   ngOnInit() {
     this.stateInStorage = localStorage.getItem('state');
@@ -31,6 +32,10 @@ export class AppComponent implements OnInit {
 
   storeState() {
     localStorage.setItem('state', JSON.stringify(this.projectState));
+  }
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
   }
 }
 

@@ -25,6 +25,10 @@ import { ShoppingEditComponent } from './course-project/shopping-list/shopping-e
 import { Assignment4Component } from './course-assignments/assignment4/assignment4.component';
 import { CockpitComponent } from './course-assignments/assignment4/cockpit/cockpit.component';
 import { ServerElementComponent } from './course-assignments/assignment4/server-element/server-element.component';
+import { Assignment41Component } from './course-assignments/assignment41/assignment41.component';
+import { EvenComponent } from './course-assignments/assignment41/even/even.component';
+import { OddComponent } from './course-assignments/assignment41/odd/odd.component';
+import { GameControlComponent } from './course-assignments/assignment41/game-control/game-control.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +50,11 @@ import { ServerElementComponent } from './course-assignments/assignment4/server-
     ShoppingEditComponent,
     Assignment4Component,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    Assignment41Component,
+    EvenComponent,
+    OddComponent,
+    GameControlComponent
   ],
   imports: [
     BrowserModule,
