@@ -29,6 +29,8 @@ import { Assignment41Component } from './course-assignments/assignment41/assignm
 import { EvenComponent } from './course-assignments/assignment41/even/even.component';
 import { OddComponent } from './course-assignments/assignment41/odd/odd.component';
 import { GameControlComponent } from './course-assignments/assignment41/game-control/game-control.component';
+import { Assignment5Component } from './course-assignments/assignment5/assignment5.component';
+import { BasicHightlightDirective } from './basic-highlight/basic-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { GameControlComponent } from './course-assignments/assignment41/game-con
     Assignment41Component,
     EvenComponent,
     OddComponent,
-    GameControlComponent
+    GameControlComponent,
+    Assignment5Component,
+    BasicHightlightDirective
   ],
   imports: [
     BrowserModule,
