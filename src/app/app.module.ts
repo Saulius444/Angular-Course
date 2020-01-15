@@ -31,6 +31,8 @@ import { OddComponent } from './course-assignments/assignment41/odd/odd.componen
 import { GameControlComponent } from './course-assignments/assignment41/game-control/game-control.component';
 import { Assignment5Component } from './course-assignments/assignment5/assignment5.component';
 import { BasicHightlightDirective } from './basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
+
 
 @NgModule({
   declarations: [
@@ -58,7 +60,8 @@ import { BasicHightlightDirective } from './basic-highlight/basic-highlight.dire
     OddComponent,
     GameControlComponent,
     Assignment5Component,
-    BasicHightlightDirective
+    BasicHightlightDirective,
+    BetterHighlightDirective
   ],
   imports: [
     BrowserModule,
