@@ -7,6 +7,7 @@
 <br><br>
 
 <ul class="list-group mb-2">
+
   <div *ngIf="onlyOdd">
     <li class="list-group-item"
       [ngClass]="{odd: odd % 2 !== 0}"
@@ -16,7 +17,7 @@
     </li>
   </div>
 
-  <div *ngIf="!onlyOdd">
+  <div *appUnless="onlyOdd">
     <li class="list-group-item"
       [ngClass]="{odd: even % 2 !== 0}"
       [ngStyle]="{backgroundColor: even % 2 !== 0 ? 'yellow' : 'transparent'}"
@@ -27,4 +28,18 @@
 </ul>
 
 <p appBasicHighlight>Wet farts</p>
+
+<p appBetterHighlight 
+  [defaultBgr]="'yellow'" 
+  [highlightBgr]="'red'">
+  Wetter farts
+</p>
+
+<div [ngSwitch]="value">
+  <p *ngSwitchCase="5">value is 5</p>
+  <p *ngSwitchCase="10">value is 10</p>
+  <p *ngSwitchCase="100">value is 100</p>
+  <p *ngSwitchDefault>value is Default</p>
+
+</div>
 
